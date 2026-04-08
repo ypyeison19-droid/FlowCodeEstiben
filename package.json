@@ -1,0 +1,10 @@
+{
+"name": "FlowCodeEstiben",
+"version" : "1.0.0",
+"type" : "module" ,
+"description" : "Primera aplicacion  Estiben Flow",
+"scripts" : {
+"star" : "node src/app.js",
+"test" : "node test/app.test.js"
+}
+}

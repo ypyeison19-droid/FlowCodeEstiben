@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { saludar, despedir, estadoSistema , sumar , restar } from "../src/app.js"
+=======
+import { saludar, despedir, estadoSistema , sumar , healthCheck } from "../src/app.js"
+>>>>>>> 4e279c8 (chore(api): funcion healtchCheck corregida)
 
 function ejecutarPruebas() {
     let pasadas = 0;
@@ -32,6 +36,7 @@ function ejecutarPruebas() {
     console.log("Test 3 Fallido: se esperaba 15 pero dio", resultadoSuma);
     fallidas++;
   }
+<<<<<<< HEAD
     // Test 4 : Restar 
 const resultadoResta = restar(439 , 76) ;
 if (resultadoResta === 363) {
@@ -43,6 +48,18 @@ if (resultadoResta === 363) {
   }
 
 
+=======
+  //Test 4 : 
+  const health = healthCheck();
+  if (health.status === 'ok'){
+    console.log('Test healthCheck pasado');
+    pasadas++; 
+  } else {
+    console.log('Test healtCheck fallido', health);
+    fallidas++;
+  }
+
+>>>>>>> 4e279c8 (chore(api): funcion healtchCheck corregida)
     console.log("\nResultados: " + pasadas + " pasadas, ", + fallidas + "fallidas");
     if (fallidas > 0) process.exit(1); "fallidas"
 }

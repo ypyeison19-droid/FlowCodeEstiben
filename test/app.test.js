@@ -1,4 +1,4 @@
-import { saludar, despedir, estadoSistema , sumar} from "../src/app.js"
+import { saludar, despedir, estadoSistema , sumar , restar } from "../src/app.js"
 
 function ejecutarPruebas() {
     let pasadas = 0;
@@ -32,6 +32,17 @@ function ejecutarPruebas() {
     console.log("Test 3 Fallido: se esperaba 15 pero dio", resultadoSuma);
     fallidas++;
   }
+    // Test 4 : Restar 
+const resultadoResta = restar(439 , 76) ;
+if (resultadoResta === 363) {
+    console.log("Test 4 Pasado: funcion restar(439, 76) es 363");
+    pasadas++;
+  } else {
+    console.log("Test 4 Fallido: se esperaba 15 pero dio", resultadoResta);
+    fallidas++;
+  }
+
+
     console.log("\nResultados: " + pasadas + " pasadas, ", + fallidas + "fallidas");
     if (fallidas > 0) process.exit(1); "fallidas"
 }

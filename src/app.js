@@ -15,11 +15,6 @@ return "Hatsa pronto," + nombre + "¡Estiben Flow!";
 export function sumar(a, b) {
   return a + b;
 }
-export function estadoSistema() {
-    return {
-        message: "Sistema funcionando correctamente"
-    };
-}
 
 export function restar(a, b) {
     return a - b;

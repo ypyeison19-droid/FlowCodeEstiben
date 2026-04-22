@@ -1,4 +1,10 @@
 
+export function estadoSistema() {
+    return {
+        estado: "activo",
+        mensaje: "El sistema está funcionando correctamente"
+    };
+}
 export function saludar (nombre){
 return "Hola " + nombre + ", bienvenido a aplicacion de Estiben Flow!" ;
 }
